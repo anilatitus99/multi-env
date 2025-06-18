@@ -1,4 +1,5 @@
 provider "google" {
+  credentials = file("/Users/anilatitus/Desktop/creds/multi-env.json")
   project = var.project_id
   region  = var.region
 }
