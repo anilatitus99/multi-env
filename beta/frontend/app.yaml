@@ -1,0 +1,8 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT app:app
+
+service: frontend-beta
+
+env_variables:
+  ENV: "beta"
+  UI_COLOR: "blue"
