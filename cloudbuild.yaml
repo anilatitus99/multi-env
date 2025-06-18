@@ -9,6 +9,8 @@ steps:
         terraform init
         terraform apply -auto-approve
 
+logsBucket: "gs://multi-env-12"
+
 substitutions:
   _BRANCH_NAME: dev
 
