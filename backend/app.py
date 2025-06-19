@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Hello from Backend - STG Environment"})
+    return jsonify({"message": "Hello from Backend - BETA Environment"})
 
 @app.route('/api')
 def api():
