@@ -9,7 +9,7 @@ steps:
     args:
       - '-c'
       - |
-        cd ${_ENV}/terraform
+        cd terraform
         terraform init
         terraform apply -auto-approve -var="project_id=$PROJECT_ID"
 
@@ -20,7 +20,7 @@ steps:
     args:
       - '-c'
       - |
-        cd ${_ENV}/backend
+        cd backend
         gcloud app deploy --quiet
 
   # Deploy Frontend App
@@ -30,7 +30,7 @@ steps:
     args:
       - '-c'
       - |
-        cd ${_ENV}/frontend
+        cd frontend
         gcloud app deploy --quiet
 
 logsBucket: "gs://multi-env-12"
