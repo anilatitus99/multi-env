@@ -1,8 +1,0 @@
-runtime: python39
-entrypoint: gunicorn -b :$PORT app:app
-
-service: backend-stg
-
-env_variables:
-  ENV: "stg"
-  MESSAGE: "Running in STG Backend"
