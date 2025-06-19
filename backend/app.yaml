@@ -1,0 +1,8 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT app:app
+
+service: backend-dev
+
+env_variables:
+  ENV: "dev"
+  MESSAGE: "Running in DEV Backend"
